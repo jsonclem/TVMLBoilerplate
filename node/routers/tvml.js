@@ -108,10 +108,6 @@ router.get('/tvml/Stack_Separator.xml.js', function (req, res) {
  */
 router.get('/', function (req, res) {
 
-  // record the application base URL here
-  db.set("baseURL", req.protocol + '://' + req.get('host'));
-  console.log("setting the baseURL: " + "graphiti");
-
   res.render('tvml/index',{baseURL: "graphiti"});
 });
 
